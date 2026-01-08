@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Set required Azure Service Bus environment variables
-export AZURE_SERVICEBUS_CONNECTION_STRING="Endpoint=sb://your_ns.servicebus.windows.net/;SharedAccessKeyName..."
-export AZURE_SERVICEBUS_TOPIC_NAME="your_topic"
-export AZURE_SERVICEBUS_SUBSCRIPTION_NAME="your_sub"
+export AZURE_SERVICEBUS_CONNECTION_STRING="Endpoint=sb://roomlynx-ci-rapa-ns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=VGySvwMbfw87s1vaxAMkZLkCyensXKBDq9VVs3vIG/k="
+export AZURE_SERVICEBUS_TOPIC_NAME="pkIdle"
+export AZURE_SERVICEBUS_SUBSCRIPTION_NAME="devpk"
 
 # Number of senders (default to 5 if not provided)
 NUM_SENDERS=${1:-5}
