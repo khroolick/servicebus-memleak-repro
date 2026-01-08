@@ -61,6 +61,7 @@ Run with custom number of senders (e.g., 10):
 ## Architecture
 
 ### NoopProcessor
+Configured to amplify the problem:
 - Uses session-based message processing
 - Configured for 200 max concurrent sessions
 - 1 concurrent call per session
@@ -76,7 +77,7 @@ Run with custom number of senders (e.g., 10):
 
 ## JVM Configuration
 
-The processor runs with memory-constrained settings to help reproduce memory issues:
+The processor runs with memory-constrained settings to help visualize memory issues:
 
 - **Heap**: 30MB max (`-Xmx30M`)
 - **GC Algorithm**: Serial GC (`-XX:+UseSerialGC`)
